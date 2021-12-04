@@ -108,5 +108,6 @@ switch (opcion)
                       
                     endwhile
       case 3
-                    
+           fprintf("Finalizacion del programa");
+             %salir          
   endswitch
