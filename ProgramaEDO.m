@@ -25,6 +25,34 @@ fprintf("\n1. Euler Mejorado");
 fprintf("\n2. Runge Kutta");
 fprintf("\n3. Salir");
 fprintf("\n\n-----------\n");
-opcion = input('Ingrese la opción requerida: ');
+opcion = input('Ingrese la opciÃ³n requerida: ');
 
+switch (opcion)
+    case 1
+           
+            fprintf('\n \t i     \t    x_i   \t      y_i+1\n');
+        fprintf('         _______________________________________________\n'); 
+           while (x_n <= finx)
+              if(ciclo ==0)
+                 fprintf('\n\t%2i\t %8.4f\t %8.4f \n',ciclo, x_n, y_n );
+              else
+               %y_n
+                    y_n = y_an + (h/2)*( feval(dxdy,x_an,y_an) + feval(dxdy,x_an+h,y_an + h*(feval(dxdy,x_an,y_an))) );
+                    
+                    fprintf('\n\t%2i\t %8.4f\t %8.4f\t  \n',ciclo, x_n, y_n );
+               endif
+               fprintf('         _________________________________________________\n'); 
+            
+                if( x_n == finx )
+                  fprintf('\n                                             i:   %8i', ciclo);
+                  fprintf('\n                                            x_i:   %8.4f', x_n);   
+                  fprintf('\n                                            y_i:   %8.4f\n', y_n);
+                endif
+                
+                 ciclo ++;
+                x_an = x_n;
+                x_n += h;
+                y_an = y_n;
+           endwhile
+   case 2
            
