@@ -1,4 +1,4 @@
-%PROGRAMA DE LA RESOLUCION DE EDO%
+%PROGRAMA DE LA RESOLUCION DE EDO
 %%Hecho por Kevin Brennan, Edwar Gonzalez, Guillermo Lezcano
 
 clc;
@@ -25,7 +25,7 @@ fprintf("\n1. Euler Mejorado");
 fprintf("\n2. Runge Kutta");
 fprintf("\n3. Salir");
 fprintf("\n\n-----------\n");
-opcion = input('Ingrese la opción requerida: ');
+opcion = input('Ingrese la opciÃ³n requerida: ');
 
 switch (opcion)
     case 1
